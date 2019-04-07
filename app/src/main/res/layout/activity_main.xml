@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fina"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Binary 1"
+            android:textColorHint="@android:color/background_light"
+            android:textColor="@android:color/background_light"
+            android:backgroundTint="@android:color/background_light"
+            android:inputType="number"
+            android:id="@+id/num1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="?"
+            android:backgroundTint="@android:color/background_light"
+            android:paddingLeft="15dp"
+            android:textColor="@android:color/background_light"
+            android:layout_weight="0.2"
+            android:id="@+id/text"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Binary 2"
+            android:textColorHint="@android:color/background_light"
+            android:textColor="@android:color/background_light"
+            android:backgroundTint="@android:color/background_light"
+            android:inputType="number"
+            android:paddingLeft="2dp"
+            android:layout_weight="1"
+            android:id="@+id/num2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="add"
+            android:background="@drawable/circle"
+            android:text="Add" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="sub"
+            android:background="@drawable/circle"
+            android:text="Subtract" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:onClick="mul"
+            android:text="Multiply" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:onClick="div"
+            android:layout_marginBottom="10sp"
+            android:text="Divide" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="and"
+            android:background="@drawable/circle"
+            android:text="And" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:onClick="or"
+            android:background="@drawable/circle"
+            android:text="Or" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:onClick="xor"
+            android:text="Xor"
+            android:layout_marginBottom="30sp"/>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:layout_gravity="center_vertical"
+        android:textSize="40sp"
+        android:id="@+id/copy"
+        android:onClick="copytext"
+        android:gravity="center_vertical"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:text="(Tap on the answer to copy)"/>
+
+</LinearLayout>
